@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Xinobi adalah jalan ninjaku.">
 <title>Xinobi</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,23 +14,12 @@
     body, html {
         height: 100%;
         margin: 0;
-        font-family: 'Baloo 2', sans-serif;
+        font-family: courier, sans-serif;
         overflow: hidden; /* Prevents scroll bars */
         display: flex;
         justify-content: center;
         align-items: center;
-        background: white; /* Background color for areas not covered by the video */
-    }
-
-    .bg-video {
-        /* Fullscreen and responsive setup */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
-        object-fit: cover; /* Cover the entire viewport without losing aspect ratio */
-        z-index: -1; /* Keep it behind the content */
+        background: black;
     }
 
     .content {
@@ -41,7 +29,7 @@
         transform: translate(-50%, -50%);
         color: white;
         text-align: center;
-        z-index: 1000; /* Content on top of the video */
+        z-index: 1000;
     }
 
     h1 {
@@ -59,11 +47,6 @@
 </style>
 </head>
 <body>
-
-<video autoplay muted loop class="bg-video">
-    <source src="preview.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
 
 <div class="content">
     <h1>Xinobi</h1>
